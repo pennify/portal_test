@@ -1,8 +1,7 @@
-package springboot;
+package com.portal;
 
 import javax.sql.DataSource;
 
-import com.alibaba.fastjson.JSONArray;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
