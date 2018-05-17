@@ -7,7 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * Created by fanlipeng on 2018/5/17 0017.
+ * Created by peng
+ * on 2018/5/17 0017.
  */
 @Service
 public class LoginServiceImpl implements LoginService{

@@ -2,12 +2,14 @@ package com.portal.back.model;
 
 import com.alibaba.fastjson.annotation.JSONField;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
- * Created by fanlipeng on 2018/5/17 0017.
+ * Created by peng
+ * on 2018/5/17 0017.
  */
-public class User {
+public class User implements Serializable{
 
     private Integer id;         //主键
     private String userName;    //用户名

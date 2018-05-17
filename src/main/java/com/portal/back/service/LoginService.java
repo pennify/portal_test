@@ -3,7 +3,8 @@ package com.portal.back.service;
 import com.portal.back.model.User;
 
 /**
- * Created by fanlipeng on 2018/5/17 0017.
+ * Created by peng
+ * on 2018/5/17 0017.
  */
 public interface LoginService {
 
