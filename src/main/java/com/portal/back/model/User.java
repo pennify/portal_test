@@ -1,5 +1,7 @@
 package com.portal.back.model;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 import java.util.Date;
 
 /**
@@ -11,8 +13,13 @@ public class User {
     private String userName;    //用户名
     private String password;    //用户密码
     private String nickName;    //用户昵称
+
+    @JSONField(format="yyyy-MM-dd")
     private Date createDate;    //用户创建时间
-    private Date updatedate;    //用户更新时间
+
+    @JSONField(format="yyyy-MM-dd")
+    private Date updatedate = new Date();    //用户更新时间
+
     private Integer isLogin;    //用户登录状态
 
     public Integer getId() {
