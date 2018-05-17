@@ -1,4 +1,4 @@
-package com.portal;
+package com.portal.web;
 
 import javax.sql.DataSource;
 
