@@ -20,7 +20,6 @@ import org.springframework.transaction.PlatformTransactionManager;
 @EnableAutoConfiguration
 @SpringBootApplication
 @ComponentScan
-@MapperScan("springboot.dao")
 public class Application extends SpringBootServletInitializer {
 
 
