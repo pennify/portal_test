@@ -26,7 +26,6 @@ public class LoginController extends BaseController {
     @RequestMapping("/getUser")
     @ResponseBody
     public Result getUserByUserName() {
-        String str = new String();
         String userName = request.getParameter("userName");
         Result result = new Result();
         User user = loginService.getUserByUserName(userName);
