@@ -26,6 +26,7 @@ public class LoginController extends BaseController {
     @RequestMapping("/getUser")
     @ResponseBody
     public Result getUserByUserName() {
+        String str = new String();//这句就是刚刚提交到本地缓存的 push到github的话
         String userName = request.getParameter("userName");
         Result result = new Result();
         User user = loginService.getUserByUserName(userName);
