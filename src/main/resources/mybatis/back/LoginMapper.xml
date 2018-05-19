@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper>
+<mapper namespace="com.portal.back.dao.LoginMapper">
 
-    <select id="getUser" parameterType="java.lang.String" resultType="com.portal.back.model.User">
+    <select id="getUserByUserName" parameterType="java.lang.String" resultType="com.portal.back.model.User">
         SELECT t.*
         FROM user t
         where t.name = #{name}
