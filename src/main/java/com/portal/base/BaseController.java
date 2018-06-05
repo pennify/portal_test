@@ -51,7 +51,6 @@ public class BaseController {
         this.logger.error("ExceptionHandler", ex);
         return this.resultToJson(result);
     }
-
     public String resultToJson(Result result) {
         return JSON.toJSONString(result, filter, new SerializerFeature[0]);
     }

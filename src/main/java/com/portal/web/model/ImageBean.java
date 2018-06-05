@@ -1,9 +1,11 @@
 package com.portal.web.model;
 
+import java.io.Serializable;
+
 /**
  * Created by fanlipeng on 2018/5/17 0017.
  */
-public class ImageBean {
+public class ImageBean implements Serializable{
 
     private String imgName;
     private String imgUrl;

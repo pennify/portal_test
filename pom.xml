@@ -31,6 +31,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+        <!--D2数据库 -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.197</version>
+        </dependency>
         <!--Mybatis -->
         <dependency>
             <groupId>org.mybatis</groupId>
@@ -73,7 +79,7 @@
         <dependency>
             <groupId>com.mangofactory</groupId>
             <artifactId>swagger-springmvc</artifactId>
-            <version>0.9.5</version>
+            <version>1.0.2</version>
         </dependency>
     </dependencies>
     <build>
