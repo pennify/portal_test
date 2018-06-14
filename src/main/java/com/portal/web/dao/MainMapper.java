@@ -11,7 +11,7 @@ import java.util.List;
  */
 public interface MainMapper {
 
-    @Select("SELECT t.imageName,t.imageUrl,t.imageDesc FROM  image t")  // mapper的注解方式
+    //@Select("SELECT t.imageName,t.imageUrl,t.imageDesc FROM  image t")  // mapper的注解方式
     public List<ImageBean> getImgList();
 
 }

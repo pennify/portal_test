@@ -21,5 +21,6 @@ public class MainServiceImpl implements MainService {
     @Override
     public List<ImageBean> getImgList() {
         return mainMapper.getImgList();
+//        return null;
     }
 }

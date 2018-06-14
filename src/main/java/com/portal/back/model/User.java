@@ -13,7 +13,7 @@ public class User implements Serializable{
 
     private Integer id;         //主键
     private String userName;    //用户名
-    private String password;    //用户密码
+    private String passWord;    //用户密码
     private String nickName;    //用户昵称
 
     @JSONField(format="yyyy-MM-dd")
@@ -40,12 +40,12 @@ public class User implements Serializable{
         this.userName = userName;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPassWord() {
+        return passWord;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
     }
 
     public String getNickName() {
