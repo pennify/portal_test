@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.ServletContext;
@@ -17,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  * Created by peng
  * on 2018/5/17 0017.
  */
+@RequestMapping("/portal_test")
 public class BaseController {
     protected Logger logger = LoggerFactory.getLogger(this.getClass());
 

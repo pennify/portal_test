@@ -1,5 +1,6 @@
 package com.portal.web.controller;
 
+import com.portal.base.BaseController;
 import com.portal.web.model.ImageBean;
 import com.portal.web.service.MainService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,9 +14,8 @@ import java.util.List;
  * Created by peng
  * on 2018/5/17 0017.
  */
-@RequestMapping("/portal")
 @Controller
-public class MainController {
+public class MainController extends BaseController{
 
     @Autowired
     private MainService mainService;
@@ -23,7 +23,7 @@ public class MainController {
     /**
      * 首页
      */
-    @RequestMapping("/index")
+    @RequestMapping("/portal/index")
     public String main(){
         return "index";
     }

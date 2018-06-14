@@ -1,24 +1,20 @@
 package com.portal.back.controller;
 
-import com.alibaba.fastjson.JSONObject;
 import com.portal.back.model.User;
 import com.portal.back.service.LoginService;
 import com.portal.base.BaseController;
 import com.portal.base.Result;
-import com.portal.web.service.MainService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * 用户管理
  * Created by peng
  * on 2018/5/17 0017.
  */
-@RequestMapping("/user")
 @Controller
 public class LoginController extends BaseController {
 
@@ -29,7 +25,7 @@ public class LoginController extends BaseController {
      * 通过用户名获取用户信息
      * @return
      */
-    @RequestMapping("/getUser")
+    @RequestMapping("/user/getUser")
     @ResponseBody
     public Result getUserByUserName() {
 

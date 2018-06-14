@@ -14,7 +14,7 @@
 
     <select id="getUserByUserName" parameterType="java.lang.String" resultMap="baseResult">
         SELECT t.*
-        FROM user t
-        where t.name = #{name}
+        FROM t_user t
+        where t.username = #{userName}
     </select>
 </mapper>

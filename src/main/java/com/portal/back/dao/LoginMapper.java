@@ -11,7 +11,7 @@ import org.apache.ibatis.annotations.Select;
  */
 public interface LoginMapper {
 
-//    @Select("select * from user t where t.userName = #{userName}")
+//    @Select("select * from t_user t where t.username = #{userName}")
     public User getUserByUserName(String userName);
 
 
