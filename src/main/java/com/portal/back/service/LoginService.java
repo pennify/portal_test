@@ -10,4 +10,7 @@ public interface LoginService {
 
     public User getUserByUserName(String userName);
 
+    public Boolean login(String userName,String passWord);
+
+    public Boolean logout(String userName);
 }

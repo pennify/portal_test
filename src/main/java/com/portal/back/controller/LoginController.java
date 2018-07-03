@@ -30,12 +30,41 @@ public class LoginController extends BaseController {
     public Result getUserByUserName() {
 
         String userName = request.getParameter("userName");
-        Result result = new Result();
         User user = loginService.getUserByUserName(userName);
-        result.setCode(200);
-        result.setMsg("success");
-        result.setData(user);
-        return result;
+        return new Result(200,"success",user);
     }
+
+    /**
+     * 用户登录
+     * @return
+     */
+    @RequestMapping("/user/login")
+    @ResponseBody
+    public Result login() {
+
+        String userName = request.getParameter("userName");
+        String passWord = request.getParameter("passWord");
+        Boolean isLogin = loginService.login(userName,passWord);
+        if (!isLogin){
+            return new Result(1,"failure");
+        }
+        return new Result(200,"success",null,"main");
+    }
+
+    /**
+     * 用户登出
+     */
+    @RequestMapping("/user/logout")
+    @ResponseBody
+    public Result logout(){
+        String userName = request.getParameter("userName");
+        Boolean res = loginService.logout(userName);
+        if (!res)
+            return new Result(1,"failure");
+        return new Result(200,"success");
+    }
+
+
+
 
 }
