@@ -1,10 +1,7 @@
 package com.portal.back.dao;
 
 import com.portal.back.model.User;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 
 /**
  * Created by peng
@@ -15,6 +12,9 @@ public interface LoginMapper {
 //    @Select("select * from t_user t where t.username = #{userName}")
     public User getUserByUserName(String userName);
 
+    @Insert("insert into t_user (username,password,createDate,updatedate,nickName) values " +
+            "(#{userName},#{passWord},#{createDate},#{updatedate},#{nickName})")
+    public Integer addUser(User user);
 
 //    @Select("select * from user where id = #{user.id}")
     public User getUserById(@Param("user") User user);

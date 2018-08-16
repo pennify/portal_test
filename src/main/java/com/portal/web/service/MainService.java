@@ -1,5 +1,6 @@
 package com.portal.web.service;
 
+import com.portal.back.model.User;
 import com.portal.web.model.ImageBean;
 
 import java.util.List;
@@ -10,4 +11,9 @@ import java.util.List;
  */
 public interface MainService {
     public List<ImageBean> getImgList();
+
+    public List<User> getUserPage(Integer index,Integer pageSize);
+
+    public Integer getUserTotal();
+
 }

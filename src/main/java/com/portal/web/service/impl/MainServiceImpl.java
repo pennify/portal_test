@@ -1,5 +1,6 @@
 package com.portal.web.service.impl;
 
+import com.portal.back.model.User;
 import com.portal.web.dao.MainMapper;
 import com.portal.web.model.ImageBean;
 import com.portal.web.service.MainService;
@@ -21,6 +22,15 @@ public class MainServiceImpl implements MainService {
     @Override
     public List<ImageBean> getImgList() {
         return mainMapper.getImgList();
-//        return null;
+    }
+
+    @Override
+    public List<User> getUserPage(Integer index, Integer pageSize) {
+        return mainMapper.getUserPage(index,pageSize);
+    }
+
+    @Override
+    public Integer getUserTotal() {
+        return mainMapper.getUserTotal();
     }
 }

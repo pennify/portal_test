@@ -23,8 +23,16 @@ public class LoginServiceImpl implements LoginService{
     }
 
     @Override
+    public Boolean addUser(User user) {
+        Integer res = loginMapper.addUser(user);
+        return res > 0 ? true : false;
+    }
+
+    @Override
     public Boolean login(String userName, String passWord) {
         User user = loginMapper.getUserByUserName(userName);
+        if (user == null)
+            return false;
         String pwd = user.getPassWord();
         String md5_pwd = Md5Util.getMd5Str(passWord);
         if (!Md5Util.getMd5Str(passWord).equals(pwd))

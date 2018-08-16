@@ -29,7 +29,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">首页</a>
+                <a class="navbar-brand" href="#" href="javascript:void(0);" onclick="onLaoyang('老洋喝熊')">首页</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -126,7 +126,7 @@
                         列表标题
                     </li>
                     <li class="active">
-                        <a href="#">首页</a>
+                        <a href="javascript:void(0);" onclick="onLaoyang('老洋喝熊')">首页</a>
                     </li>
                     <li>
                         <a href="#">库</a>
@@ -154,12 +154,15 @@
     </div>
     <div class="col-md-11">.col-md-4</div>
 </div>
+<%-- jquery JS--%>
 <script type="text/javascript" src="/plugins/jquery/jquery-2.1.4.min.js"></script>
 <!-- Swiper JS -->
 <script type="text/javascript" src="/plugins/swipper/swiper.min.js"></script>
+<%-- bootstrap JS--%>
 <script type="text/javascript" src="/plugins/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
 <!-- Initialize Swiper -->
-<script>
+<%--<script>
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -173,6 +176,6 @@
             prevEl: '.swiper-button-prev'
         }
     });
-</script>
+</script>--%>
 </body>
 </html>

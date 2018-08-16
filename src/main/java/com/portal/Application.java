@@ -17,6 +17,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
+
 @EnableAutoConfiguration
 @SpringBootApplication
 @ComponentScan
@@ -56,9 +57,7 @@ public class Application extends SpringBootServletInitializer {
     }
 	
 	public static void main(String[] args) {
-
 		SpringApplication.run(Application.class, args);
-
 	}
 
 }

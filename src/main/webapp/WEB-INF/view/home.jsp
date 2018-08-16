@@ -1,0 +1,17 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <h1>首页</h1>
+<script src="./js/jquery-1.8.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('h1').css("color",'red');
+    })
+</script>
+</body>
+</html>

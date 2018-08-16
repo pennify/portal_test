@@ -16,10 +16,10 @@ public class User implements Serializable{
     private String passWord;    //用户密码
     private String nickName;    //用户昵称
 
-    @JSONField(format="yyyy-MM-dd")
+    @JSONField(format="yyyy-MM-dd HH:mm:ss")
     private Date createDate;    //用户创建时间
 
-    @JSONField(format="yyyy-MM-dd")
+    @JSONField(format="yyyy-MM-dd HH:mm:ss")
     private Date updatedate = new Date();    //用户更新时间
 
     private Integer isLogin;    //用户登录状态

@@ -23,6 +23,9 @@ public class Result {
         this(code,msg,data,null);
     }
 
+    public Result(Integer code, String msg,String redirect){
+        this(code,msg,null,redirect);
+    }
     public Result(Integer code, String msg, Object data, String redirect) {
         this.code = code;
         this.msg = msg;
@@ -60,5 +63,10 @@ public class Result {
 
     public void setRedirect(String redirect) {
         this.redirect = redirect;
+    }
+
+    @Override
+    public String toString() {
+        return "code : " + this.code + "; msg : " + this.msg + "; data : " + this.data + "; redirect : " + this.redirect;
     }
 }
