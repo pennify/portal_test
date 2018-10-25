@@ -52,7 +52,7 @@ public class LoginController extends BaseController {
             strs.add("15092740187");
             strs.add("13156173256");
             // invoke("方法名",参数1,参数2,参数3....);
-            objects = client.invoke("sendSMS", "9SDK-EMY-0999-RFTON","932434","",strs, "你好，内容", "a1s3","gbk",5,0);
+            objects = client.invoke("sendSMS", "9SDK-EMY-fsa0999-fdsaRFTON","932fasf434","",strs, "你好，内容", "a1s3","gbk",5,0);
             System.out.println("返回数据:" + objects[0]);
         } catch (java.lang.Exception e) {
             e.printStackTrace();
